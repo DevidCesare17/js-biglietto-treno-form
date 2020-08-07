@@ -16,15 +16,15 @@
           <form class="form_dati d_flex" action="index.html" method="post">
             <div class="col_1 d_flex">
               <label>Nome Cognome</label>
-              <input type="text" name="name" value="" placeholder="Inserisci nome e cognome">
+              <input id="name" type="text" name="name" value="" placeholder="Inserisci nome e cognome">
             </div>
             <div class="col_2 d_flex">
               <label>Km da percorrere</label>
-              <input type="number" name="km" value="" placeholder="Inserisci km">
+              <input id="km" type="number" name="km" value="" placeholder="Inserisci km">
             </div>
             <div class="col_3 d_flex">
               <label>Fascia di et&agrave;</label>
-              <select class="" name="eta">
+              <select id="eta" class="" name="eta">
                 <option value="0">Seleziona</option>
                 <option value="1">Maggiorenne</option>
                 <option value="2">Minorenne</option>
@@ -36,8 +36,8 @@
 
         <!-- button -->
         <div class="btn d_flex">
-          <button type="button" name="button">Genera</button>
-          <button type="button" name="button">Annulla</button>
+          <button id="genera" type="button" name="button">Genera</button>
+          <button id="annulla" type="button" name="button">Annulla</button>
         </div>
         <!-- /button -->
       </div>
@@ -50,24 +50,24 @@
         <div class="output_dati d_flex">
           <div class="nome_passeggero">
             <h3>nome passeggero</h3>
-            <span></span>
+            <span id="ticket_name"></span>
           </div>
           <div class="output_price d_flex">
             <div class="col_b_1">
               <h4>Offerta</h4>
-              <span></span>
+              <span id="ticket_offerta"></span>
             </div>
             <div class="col_b_2">
               <h4>Carrozza</h4>
-              <span></span>
+              <span id="num_carrozza"></span>
             </div>
             <div class="col_b_3">
               <h4>Codice CP</h4>
-              <span></span>
+              <span id="codcp"></span>
             </div>
             <div class="col_b_4">
               <h4>Costo Biglietto</h4>
-              <span></span>
+              <span id="prezzo_tot"></span>
             </div>
           </div>
         </div>

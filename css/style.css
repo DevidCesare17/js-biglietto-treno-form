@@ -17,6 +17,11 @@ h2{
   text-align: center;
 }
 
+h3{
+  text-transform: uppercase;
+  color: #000000;
+}
+
 label{
   color: #B91450;
   font-size: 15px;
@@ -76,6 +81,7 @@ select:focus{
   box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
   padding: 20px;
   margin: 30px 0;
+  width: 100%;
 }
 
 .form_dati{
@@ -113,5 +119,32 @@ select:focus{
 /* /button */
 
 /* output dei dati inseriti più calcolo biglietto treno */
+.your_ticket{
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
 
+.nome_passeggero{
+  background-color: #808080;
+  padding: 20px;
+  width: 30%;
+}
+
+.output_price{
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #808080;
+  padding: 20px;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.your_ticket h3, h4{
+  margin-bottom: 20px;
+}
+
+[class*="col_b_"]:not(:last-child){
+  margin-right: 10px;
+}
 /* /output dei dati inseriti più calcolo biglietto treno */

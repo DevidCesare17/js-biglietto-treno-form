@@ -73,6 +73,14 @@ select:focus{
 .d_flex{
   display: flex;
 }
+
+.d_block{
+  display: block;
+}
+
+.d_none{
+  display: none;
+}
 /* /GENERALI */
 
 /* inserimento dati, km e fascia di età */

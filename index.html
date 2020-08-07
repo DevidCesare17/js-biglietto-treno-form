@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acquisto Biglietto Treno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>calcola il prezzo del tuo biglietto</h2>
+      <div class="calcolate_price">
+        <!-- inserimento dati, km e fascia di età -->
+          <form class="form_dati d_flex" action="index.html" method="post">
+            <div class="col_1 d_flex">
+              <label>Nome Cognome</label>
+              <input type="text" name="name" value="" placeholder="Inserisci nome e cognome">
+            </div>
+            <div class="col_2 d_flex">
+              <label>Km da percorrere</label>
+              <input type="number" name="km" value="" placeholder="Inserisci km">
+            </div>
+            <div class="col_3 d_flex">
+              <label>Fascia di et&agrave;</label>
+              <select class="" name="eta">
+                <option value="0">Seleziona</option>
+                <option value="1">Maggiorenne</option>
+                <option value="2">Minorenne</option>
+                <option value="3">Over 65</option>
+              </select>
+            </div>
+          </form>
+        <!-- /inserimento dati, km e fascia di età -->
+
+        <!-- button -->
+        <div class="btn d_flex">
+          <button type="button" name="button">Genera</button>
+          <button type="button" name="button">Annulla</button>
+        </div>
+        <!-- /button -->
+      </div>
+
+
+      <!-- output dei dati inseriti più calcolo biglietto treno -->
+      <h2>il tuo biglietto</h2>
+      <div class="your_ticket">
+        <h3>dettaglio passeggeri</h3>
+        <div class="nome_passeggero">
+          <h3>nome passeggero</h3>
+          <span></span>
+        </div>
+        <div class="output_dati">
+          <div class="">
+            <h4>Offerta</h4>
+            <span></span>
+          </div>
+          <div class="">
+            <h4>Carrozza</h4>
+            <span></span>
+          </div>
+          <div class="">
+            <h4>Codice CP</h4>
+            <span></span>
+          </div>
+          <div class="">
+            <h4>Costo Biglietto</h4>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <!-- /output dei dati inseriti più calcolo biglietto treno -->
+    </div>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

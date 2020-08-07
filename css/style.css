@@ -1,0 +1,117 @@
+/* GENERALI */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #B91450;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+label{
+  color: #B91450;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+input{
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #B91450;
+  outline: none;
+  text-align: center;
+}
+input::placeholder{
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+}
+input:focus{
+  color: #ffffff;
+  background-color: #B91450;
+}
+input:focus::placeholder{
+  color: #ffffff;
+}
+
+select{
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #B91450;
+  outline: none;
+  text-align: center;
+}
+select:focus{
+  color: #ffffff;
+  background-color: #B91450;
+  cursor: pointer;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.d_flex{
+  display: flex;
+}
+/* /GENERALI */
+
+/* inserimento dati, km e fascia di età */
+.calcolate_price{
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.form_dati{
+  justify-content: space-around;
+}
+
+.form_dati>[class*="col"]{
+  flex-direction: column;
+  align-items: center;
+}
+/* /inserimento dati, km e fascia di età */
+
+/* button */
+.btn{
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn button{
+  color: #B91450;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #CCCCCC;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 5px;
+}
+.btn button:not(:last-child){
+  margin-right: 20px;
+}
+
+.btn button:focus{
+  outline-color: #9C609D;
+}
+/* /button */
+
+/* output dei dati inseriti più calcolo biglietto treno */
+
+/* /output dei dati inseriti più calcolo biglietto treno */

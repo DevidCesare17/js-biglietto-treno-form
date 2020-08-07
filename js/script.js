@@ -1,6 +1,7 @@
+var genera = document.getElementById("genera");
+var annulla = document.getElementById("annulla");
 
-
-document.getElementById("genera").addEventListener("click",
+genera.addEventListener("click",
   function() {
     var name = document.getElementById("name").value;
     if (name.length < 3 || !isNaN(name)) {
@@ -48,11 +49,13 @@ document.getElementById("genera").addEventListener("click",
   }
 );
 
-document.getElementById("annulla").addEventListener("click",
+annulla.addEventListener("click",
   function() {
-    // INSERIRE RESET CAMPI INPUT
-
     var biglietto = document.getElementById("bigliettone");
     biglietto.className = "d_none";
+
+    document.getElementById("name").value = "";
+    document.getElementById("km").value = "";
+    document.getElementById("eta").value = "0";
   }
 );

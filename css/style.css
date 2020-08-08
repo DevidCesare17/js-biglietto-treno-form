@@ -157,3 +157,48 @@ select:focus{
   margin-right: 10px;
 }
 /* /output dei dati inseriti più calcolo biglietto treno */
+
+/* MEDIAQUERY */
+@media screen and (max-width: 768px) {
+  /* inserimento dati, km e fascia di età */
+  .form_dati{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form_dati>[class*="col"]{
+    margin-bottom: 20px;
+  }
+  /* /inserimento dati, km e fascia di età */
+
+  /* output dei dati inseriti più calcolo biglietto treno */
+  .output_dati{
+    flex-wrap: wrap;
+  }
+  .nome_passeggero{
+    width: 100%;
+  }
+  .output_price{
+    flex-direction: column;
+    width: 100%;
+  }
+  [class*="col_b_"]{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  [class*="col_b_"]:not(:last-child){
+    margin-right: 0;
+  }
+  [class*="col_b_"]>h4{
+    margin-right: 10px;
+  }
+  [class*="col_b_"]>h4:not(:last-child){
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  [class*="col_b_"]>span{
+    text-align: right;
+  }
+  /* /output dei dati inseriti più calcolo biglietto treno */
+}
+/* /MEDIAQUERY */
